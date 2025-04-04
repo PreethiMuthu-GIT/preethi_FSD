@@ -1,0 +1,102 @@
+<html>
+  <head>
+    </head>
+  <body style="font-size:20px">
+   <h3><a href="#images">IMAGES</a> &nbsp&nbsp&nbsp   | &nbsp&nbsp&nbsp     <a href="#videos">VIDEOS</a>&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp     <a href="#audios">AUDIOS</a></h3>
+   <section>
+   <article id="images">
+   <h3 style="text-align:center">HTML Images</h3>
+   <p>-The HTML "img" tag is used to embed an image in a web page.<br><br>
+-Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.<br><br>
+-The <img> tag is empty, it contains attributes only, and does not have a closing tag.<br><br>
+-The <img> tag has two required attributes:<br>
+<ul>
+<li>src - Specifies the path to the image</li>
+<li>alt - Specifies an alternate text for the image</li></ul>
+<u>Syntax:</u><br>
+&nbsp&nbsp&nbsp&nbsp  img  src="url"  alt="alternatetext"<br><br>
+<img src="photos/dhoni.jpg" alt="dhoni" width="300px" height="300px"/><br><br>
+<b>The src Attribute</b><br><br>
+-The required src attribute specifies the path (URL) to the image.<br><br>
+
+<b>Note:</b> When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.
+  <br><br><b>The alt Attribute</b><br><br>
+-The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+<br><br>
+-The value of the alt attribute should describe the image:<br><br>
+<u>Example:</u>
+
+<img src="photos/dhoni.png" alt="dhoni"/><br><br>
+-If a browser cannot find an image, it will display the value of the alt attribute
+<br><br>
+-You can use the style attribute to specify the width and height of an image.(or)you can use the width and height attributes.<br>
+------style="width:500px;height:600px;"<br>
+------width="500" height="600"
+  </p>
+   </article>
+   </section>
+   
+   
+   <hr>
+   
+   
+   <section>
+   <article id="videos">
+   <h3 style="text-align:center">HTML Videos</h3>
+   <p>-The HTML "video" element is used to show a video on a web page.<br><br>
+   <u>Example:</u><br>
+   <pre>
+         video width="300px" height="3oopx" controls
+           source src="photos/video.mp4" type="video/mp4"
+		   your browser does not suppport the video tag.
+         /video
+   </pre>
+   <video  width="300px"height="300px" controls>
+      <source src="photos/video.mp4" type="video/mp4">
+   </video><br><br>
+   <b>How it Works</b><br><br>
+   -The "controls" attribute adds video controls, like play, pause, and volume.
+<br><br>
+-It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+<br><br>
+-The "source" element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+<br><br>
+-The text between the "video" and "/video" tags will only be displayed in browsers that do not support the "video" element.
+   
+   </p>
+   </article>
+   </section>
+   
+   
+    <hr>
+	
+	
+   <section>
+   <article id="audios">
+   <h3 style="text-align:center">HTML Images</h3>
+   <p>-The HTML "audio" element is used to play an audio file on a web page.<BR><BR>
+   <u>Example:</u><br>
+   <pre>
+          audio controls
+           source src="photos/minnaley.mp3" type="audio/mp3"
+           Your browser does not support the audio element.
+          /audio
+</pre>
+   <h3 style="background-color:pink; color:black;text-align:center">..........HEY MINNALEY........</h3>
+
+    <audio controls>
+    <source src="photos/minnaley.mp3" type="audio/mp3"/>
+      </audio><br>
+	  
+	  <b>How it Works</b><br><br>
+-The "controls" attribute adds audio controls, like play, pause, and volume.
+<br><br>
+-The "source" element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
+<br><br>
+-The text between the "audio" and "/audio" tags will only be displayed in browsers that do not support the "audio" element.
+   </p>
+   </article>
+   </section>
+   
+    </body>
+</html>

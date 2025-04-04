@@ -1,0 +1,85 @@
+<html>
+ <head> 
+
+  </head>
+  <body style="font-size:20px;background-color:whitesmoke">
+  <h3><a href="#iframe">Iframes</a> &nbsp&nbsp&nbsp   | &nbsp&nbsp&nbsp     <a href="#marquee">Marquee</a>&nbsp&nbsp&nbsp</h3> 
+  <section>
+   <article id="iframe">
+  <h1 style="text-align:center;">IFRAMES</h1>
+  <p>-An HTML iframe is used to display a web page within a web page.<br><br>
+  
+  ---HTML Iframe Syntax---<br><br>
+-The HTML "iframe" tag specifies an inline frame.<br><br>
+-An inline frame is used to embed another document within the current HTML document.<br><br>
+
+<u>Syntax</u><br><br>
+&nbsp&nbsp &nbsp &nbsp    iframe   src="url" title="description"   /iframe<br><br>
+  <b>---Iframe - Set Height and Width---</b><br><br>
+-Use the height and width attributes to specify the size of the iframe.
+<br><br>
+-The height and width are specified in pixels by default (or)Or you can add the style attribute and use the CSS height and width properties:<br><br>
+height="200" width="300"<br>
+style="height:200px;width:300px;"
+ <br><br> 
+ <b>---Iframe - Target for a Link---</b><br><br>
+-An iframe can be used as the target frame for a link.<br><br>
+
+-The "target" attribute of the link must refer to the "name" attribute of the iframe:
+  <br><br>
+
+ <iframe src="C:\Users\preet\Desktop\FSD NOTES\HTML NOTES.txt" height="400px" width="600px" name="htmlnotes_a"></iframe> 
+<p> If u want an clear explanation of HTML then visit this <a href="https://www.google.com/" target="htmlnotes_a">NOTES</a> </p>
+   </p>
+   </article>
+   </section>
+   
+   
+   <hr>
+   
+   
+   <section>
+   <article id="marquee">
+   <h1 style="text-align:center;">MARQUEE HTML</h1>
+   <p>-The Marquee HTML tag is a non-standard HTML element which is used to scroll a image or text horizontally or vertically.
+<br><br>
+-In simple words, you can say that it scrolls the image or text up, down, left or right automatically.</p>
+ 
+   <u>Syntax:</u><br><br>
+   &nbsp&nbsp&nbsp&nbsp  marquee   ---content---  /marquee<br><br>
+   <b>HTML Marquee attributes</b><br><br>
+   --behavior-It facilitates user to set the behavior of the marquee to one of the three different types: scroll, slide and alternate.
+   <br>
+   --direction-
+defines direction for scrolling content. It may be left, right, up and down.
+<br>
+--scrolldelay-
+defines scroll delay in seconds.<br>
+--scrollamount-
+defines scroll amount in number.<br>
+--loop-
+defines loop for marquee content in number.<br><br>
+<u>Scroll marquee</u><br><br>
+-It is a by default property. It is used to scroll the text from right to left, and restarts at the right side of the marquee when it is reached to the end of left side. After the completion of loop text disappears.<br><br>
+
+<marquee width="100%" behavior="scroll" bgcolor="pink">  
+This is an example of a scroll marquee...  
+</marquee>  
+<u>Slide marquee</u><br><br>
+-In slide marquee, all the contents to be scrolled will slide the entire length of marquee but stops at the end to display the content permanently.
+
+<marquee width="100%" behavior="slide" bgcolor="pink">  
+This is an example of a slide marquee...  
+</marquee>  
+<u>Alternate marquee</u><br><br>
+-It scrolls the text from right to left and goes back left to right.
+   <br>
+   <marquee width="100%" behavior="alternate" bgcolor="pink">  
+This is an example of a alternate marquee...  
+</marquee>
+</article>
+   </section>
+   
+   </body>
+</html>
+
