@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .parent{
+        border:4px solid green;
+        height:150vh;
+        width: 500px;
+        position:relative;
+        left: 500px;
+    }
+    div.one{
+       border: dashed 3px black ;
+       background-color: rgba(167, 156, 156, 0.926);
+       padding: 10px;
+       margin: 10px 5px;
+       color: white;
+       font-size: 25px;
+    }
+    .two{
+        height: 920px;
+    }
+    .three{
+        position: sticky;
+        top: 0px;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="one three">HEADER</div>
+        <div class="one two">MAIN CONTENT</div>
+        <div class="one">FOOTER</div>
+    </div>
+</body>
+</html>
