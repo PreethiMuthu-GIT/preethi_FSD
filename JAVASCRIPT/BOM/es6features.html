@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Features</title>
+</head>
+<body>
+
+
+    <script>
+        let name = "preethi"
+        const age = 20
+        console.log(`My name is ${name}  my age is ${age}`)
+
+        //arrow function and default parameters
+
+        let greet = (name,age=24) => {
+            
+            console.log(`My name is ${name}  my age is ${age}`)
+        }
+        greet("ramya")
+        greet("ramya",25)
+
+        //for of loop == is used in arrays
+
+        let fsd = ["HTML","CSS","JAVASCRIPT"]
+        for (let lang of fsd){
+            console.log(lang)
+        }
+
+        //array distruction
+
+        let fullstackdev = ["HTML","CSS","JAVASCRIPT"]
+        let [val1,val2,val3] = fullstackdev
+        console.log(val1)
+        console.log(val2)
+        console.log(val3)
+
+
+
+
+
+        
+
+    </script>
+</body>
+</html>

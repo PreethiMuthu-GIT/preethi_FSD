@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let details={
+            name:"preethi"
+        }
+        console.log(details.name)
+        details.age=20
+        details.course="Full stack Java "
+        console.log(details)
+        console.log(details["age"])
+        delete details.age
+        console.log(details["age"])
+
+        console.log(details)
+
+
+        const  seasons={
+            s1:"winter",
+            s2:"summer",
+            s3:"rainy",
+            display:function(){
+                alert("error")
+            }
+
+        }
+        //seasons.display()
+        //seasons["display"]()
+
+
+
+        //map 
+
+
+        let mp=new Map()
+        //set values in map using set
+
+        mp.set(1,"preethi")
+        mp.set(2,"muthu")
+        console.log(mp)
+        console.log(mp.get(2))
+
+        let veg=new Map([
+        ["apple",600]
+        ])
+    
+    </script>
+</body>
+</html>

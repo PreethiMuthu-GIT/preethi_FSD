@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="ecom.css">
+</head>
+<body>
+                //header
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png" style="width:45px;height:35px">&nbsp TIFANY & CO.</a>
+        <div id="cart-icon">
+            <i class="ri-shopping-bag-line"></i>
+            <span class="cart-item-count"></span>
+        </div>
+    </header>
+
+              //cart details   
+
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            
+            <!--<div class="cart-box">    
+                <img src="images/product1.jpg"  class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">Casual Black Polo</h2>
+                    <span class="cart-price">$100</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="ri-delete-bin-line cart-remove"></i>
+            </div>-->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class="ri-close-line" id="cart-close"></i>
+    </div>
+
+    
+     
+            //Products section
+
+    <section class="shop">
+        <h1 class="section-title">EXCLUSIVE COLLECTIONS</h1>
+        <div class="product-content">
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/earing1.jpg" alt="nan">
+                </div>
+                <h2 class="product-title">ALIZEH CHANDBALIS</h2>
+                <div class="price-and-cart">
+                    <span class="price">$499</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+       
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/earing2.jpg" alt="nan">
+                </div>
+                <h2 class="product-title">NORA CHANDBALIS</h2>
+                <div class="price-and-cart">
+                    <span class="price">$449</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+        
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/earing3.jpg" alt="nan">
+                </div>
+                <h2 class="product-title">ALIA CHANDBALIS</h2>
+                <div class="price-and-cart">
+                    <span class="price">$599</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+        
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/earing4.jpg" alt="nan">
+                </div>
+                <h2 class="product-title">PIHU CHANDBALIS</h2>
+                <div class="price-and-cart">
+                    <span class="price">$749</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+       
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/chain1.jpg" alt="nan">
+                </div>
+                <h2 class="product-title">TANUSA SET</h2>
+                <div class="price-and-cart">
+                    <span class="price">$999</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+       
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/earing6.jpg" alt="nan">
+                </div>
+                <h2 class="product-title">NOORA CHANDBALIS</h2>
+                <div class="price-and-cart">
+                    <span class="price">$489</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+        
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/chain2.jpg" alt="nan">
+                </div>
+                <h2 class="product-title">GURNOOR CHOKER SET</h2>
+                <div class="price-and-cart">
+                    <span class="price">$999</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+        
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/chain3.jpg" alt="nan">
+                </div>
+                <h2 class="product-title">TIYA SET BLACK</h2>
+                <div class="price-and-cart">
+                    <span class="price">$899</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/earing7.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">RAJKUMARI EARRINGS</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$799</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/chain4.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">KHYATI SET</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$1099</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/earing8.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">RAI EARRINGS</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$449</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/chain5.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">AMIKA KUNDAN SET</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$1599</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/earing9.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">RAJIKA EARRINGS</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$499</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/earing10.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">GALAXY HOOP EARRINGS</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$699</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/chain6.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">TISHYA KUNDAN SET</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$1799</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/chain7.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">RIHANA CHOKER SET</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$1299</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/earing11.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">SHIRIN CHANDBALIS</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$649</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/earing12.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">SHRINGAR CHANDBALIS</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$678</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/earing13.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">MADELINE EARRINGS</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$765</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/chain8.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">MAHEYI SET LILAC</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$649</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/earing14.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">PAASHI EARRINGS</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$599</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/chain9.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">LINNEA FLOWER SET</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$899</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/earing15.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">KEISH JHUMKAS</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$459</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/earing16.jpg" alt="nan">
+                    </div>
+                    <h2 class="product-title">DHARNA JHUMKAS</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$679</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+
+
+
+
+
+<script src="ecom.js"></script>
+</body>
+</html>

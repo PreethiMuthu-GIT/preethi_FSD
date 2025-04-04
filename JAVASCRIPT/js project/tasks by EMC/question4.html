@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name">Name</h1>
+    <button onclick="change(event)">John</button>
+    <button onclick="change(event)">Hari</button>
+    <button onclick="change(event)">Praveen</button>
+
+    <script>
+        let name=document.getElementById("name")
+        
+        function change(event){
+            name.textContent=event.target.textContent
+            
+        }
+    </script>
+</body>
+</html>

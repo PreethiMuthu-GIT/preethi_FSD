@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome To Registration</h1>
+        </div>
+    <form action="login.html" method="post" id="form" class="form">
+        <div class="field">
+            <label>Username :</label>
+            <input type="text" placeholder="username" id="uname">
+            <span class="material-icons success">check_circle</span>
+            <span class="material-icons error">error</span>
+            <small>Error Messages</small>
+        </div>
+
+        <div class="field">
+            <label>Email:</label>
+            <input type="text" placeholder="Email id" id="email">
+            <span class="material-icons success">check_circle</span>
+            <span class="material-icons error">error</span>
+            <small>Error Messages</small>
+        </div>
+
+        <div class="field">
+            <label>Password:</label>
+            <input type="password" placeholder="password" id="password">
+            <span class="material-icons success">check_circle</span>
+            <span class="material-icons error">error</span>
+            <small>Error Messages</small>
+        </div>
+
+        <div class="field">
+            <label>Confirm Password :</label>
+            <input type="password" placeholder="confirm password" id="cpassword">
+            <span class="material-icons success">check_circle</span>
+            <span class="material-icons error">error</span>
+            <small>Error Messages</small>
+        </div>
+
+        <div class="field">
+            <input type="checkbox"  id="tc" class="terms">
+            <label>I agree Terms and Conditions</label>
+            <small>Error Messages</small>
+        </div>
+        
+ 
+       <button type="submit" class="button">Submit</button>
+
+
+       
+
+    </form>
+</div>
+    
+    
+
+
+
+    <script src="form.js"></script>
+</body>
+</html>

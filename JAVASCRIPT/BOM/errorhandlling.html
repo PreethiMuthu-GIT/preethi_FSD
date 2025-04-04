@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Error Handling</h1>
+
+    <script>
+        /*try{
+            let greet = "welcome to class"
+
+            document.write(greet)
+            document.write(wel)
+        }
+        catch(e){
+            alert("invalid error  "+ e.message)
+        }
+
+
+        let num = prompt("enter a number 0to 100 : ")
+        var start = Date.now()
+         try{
+            if (num>0 && num<=100){
+                alert("number is :"+Math.pow(num,num))
+            }
+            else{
+                throw new Error("enter valid number..")
+            }
+         }
+         catch(e){
+            alert("error is: "+e.message)
+         }
+
+         finally{
+            alert("execution time is:" + (Date.now()-start)+"ms")
+         }
+                        */
+
+    let number=+prompt("enter a number:")
+
+    function fun(num){
+    try{
+     if (num<0){
+        throw new Error("enter valid number")
+     }
+     else{
+        alert("square root of the number: "+Math.sqrt(num))
+     }
+    }
+
+   catch(e){
+    alert("error is: "+ e.message)
+   }
+    finally{
+        alert("execution successfully")
+    }
+}
+   fun(number)
+
+   
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

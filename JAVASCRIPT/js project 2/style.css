@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+.container{
+   color: beige;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   position: absolute;
+   top: 50%;
+   right: 50%;
+   transform: translate(50%,-50%);
+   font-size: 100px;
+}
