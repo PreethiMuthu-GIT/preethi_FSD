@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config></context:annotation-config>
+	
+	<!-- <bean class="com.demo.Address" id="add">
+   <property name="huid" value="100001"></property>
+   <property name="colony"  value="secunderabad"></property>
+   <property name="pincode"  value="50017"></property>
+   <property name="state"  value="telangana"></property>
+   </bean> -->
+   
+   <bean class="com.demo.Address" id="add">
+   <constructor-arg  value="100001"></constructor-arg>
+   <constructor-arg  value="secunderabad"></constructor-arg>
+   <constructor-arg  value="50017"></constructor-arg>
+   <constructor-arg  value="telangana"></constructor-arg>
+   </bean> 
+   
+ 	<!-- <bean class="com.demo.Employee" id="emp" autowire="byType">byName=address and bean add(address) should be same autowire works without address property
+ 	<property name="empid" value="1"></property>
+ 	<property name="empname" value="preethi"></property>
+ 	<property name="empsal" value="7000000"></property>
+ 	<property name="address" ref="add"></property>
+ 	</bean> -->
+ 	
+ 	 <bean class="com.demo.Employee" id="emp" autowire="constructor"><!-- using constructor -->
+ 	<constructor-arg type="int" value="1"></constructor-arg>
+ 	<constructor-arg  value="preethi"></constructor-arg>
+ 	<constructor-arg type="double" value="7000000"></constructor-arg>
+ 	<!-- <constructor-arg  ref="add"></constructor-arg> --><!-- but in constructor we need to add type -->
+ 	</bean>
+	
+	
+</beans>
